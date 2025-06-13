@@ -15,7 +15,6 @@ class GAME_API Character
 public:
     Character(const char* name);
     ~Character();
-    //add new char
 
     const char* name() const;
     bool dead() const;
