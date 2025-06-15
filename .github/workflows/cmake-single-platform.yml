@@ -26,4 +26,4 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} -v --target ${{env.TARGET}}
 
     - name: Archive Artifact
-      run: Compress-Archive -Path build/bin/ -DestinationPath ${{env.TARGET}}-${{env.BUILD_TYPE}}.zip
+      run: Compress-Archive -Path build/bin/* -DestinationPath ${{env.TARGET}}-${{env.BUILD_TYPE}}.zip
