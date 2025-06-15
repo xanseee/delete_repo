@@ -10,7 +10,7 @@ on:
 
 env:
   BUILD_TYPE: Release
-  TARGET: FightClubGame
+  TARGET: Fight_ClubX
 
 jobs:
   build:
