@@ -25,7 +25,7 @@ jobs:
     - name: Build
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} -v --target ${{env.TARGET}}
 
-    - name: Upload binaries
+    - name: Archive Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: ${{env.TARGET}}-${{env.BUILD_TYPE}}
